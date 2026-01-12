@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FinTra</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1>Fintra</h1>
+        </nav>
+
+        <main class="container">
+            <!-- BALANCE CARD -->
+             <section class="balance-card">
+                <h2>Current Balance</h2>
+                <p id="balance">$0</p>
+             </section>
+
+             <!-- FORM -->
+              <section class="form-section">
+                <h3>Add Transaction</h3>
+                <form id="transaction-form">
+                    <input type="text" id="description" placeholder="Description" required/>
+                    <input type="number" id="amount" placeholder="Amount" required/>
+
+                    <select id="category">
+                        <option value="income">Income</option>
+                        <option value="food">Food</option>
+                        <option value="transport">transport</option>
+                        <option value="bills">Bills</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <input type="date" id="date" required />
+
+                    <button type="submit">Add</button>
+                </form>
+              </section>
+
+              <!-- TRANSACTION LIST -->
+               <section class="transactions-list">
+                <h3>Transactions</h3>
+                <ul id="transactions"></ul>
+               </section>
+        </main>
+
+        <script src="scripts/app.js"></script>
+    </body>
+</html>

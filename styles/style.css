@@ -1,0 +1,122 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: #e6e6e6;
+}
+
+.navbar {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #222;
+}
+
+.navbar h1 {
+    color: #0ef;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* BALANCE CARD */
+.balance-card {
+    background: #141414;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+.balance-card h2 {
+    color: #aaa;
+}
+
+#balance {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0ef;
+    margin-top: 10px;
+}
+
+/* FORM */
+.form-section {
+    background: #141414;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.08);
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 6px;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #0ef;
+    outline: none;
+}
+
+form button {
+    background: #0ef;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    opacity: 0.85;
+}
+
+/* TRANSACTION LIST */
+.transactions-list {
+    background: #141414;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.1);
+}
+
+.transactions-list ul {
+    list-style: none;
+}
+
+.transactions-list li {
+    background: #1a1a1a;
+    padding: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-left: 4px solid #0ef;
+    border-radius: 6px;
+}
+
+.delete-btn {
+    background: #ff4444;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
