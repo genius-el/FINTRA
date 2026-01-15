@@ -4,7 +4,7 @@ const form = document.getElementById("transaction-form");
 const transactionsList = document.getElementById("transactions");
 const balanceEl = document.getElementById("balance");
 
-form.addEventListener('submit', function(e) {
+form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const description = document.getElementById("description").value;
@@ -34,8 +34,9 @@ function renderTransactions() {
         const li = document.createElement("li");
 
         li.innerHTML = `
-        <span>${t.description} - $${t.amount} (${t.category})</span>
-        <button class="delete-btn" onclick="deleteTransaction(${t.id})">Delete</button>
+            <span>${t.description} - ₦${t.amount} (${t.category})</span>
+            <button class="delete-btn"
+            onclick="deleteTransaction(${t.id})">Delete</button>
         `;
 
         transactionsList.appendChild(li);
@@ -57,5 +58,5 @@ function updateBalance() {
         }
     }, 0);
 
-    balanceEl.textContent = `$${total}`
+    balanceEl.textContent = `₦${total}`;
 }
