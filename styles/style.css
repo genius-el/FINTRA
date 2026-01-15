@@ -60,6 +60,11 @@ body {
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.08);
 }
 
+.form-section h3 {
+    margin-bottom: 15px;
+    color: #aaa;
+}
+
 form input,
 form select,
 form button {
